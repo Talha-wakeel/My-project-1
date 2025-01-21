@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        background: rgba(65, 27, 27, 0.44);
+    }
+
+    .Introduction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .heading {
+        width: 500px;
+        padding: 70px;
+        margin-left: 50px;
+    }
+
+    .img {
+        padding: 70px;
+        margin-right: 50px;
+        border-radius: 50%;
+    }
+
+    @media screen and (max-width:900px) {
+
+        body {
+            background: rgb(44, 37, 68);
+        }
+
+        .Introduction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .heading {
+            width: 600px;
+            font-size: larger;
+            border: 2px solid saddlebrown;
+            border-radius: 50%;
+            background-color: rgb(39, 62, 70);
+        }
+
+        .img {
+
+            border-radius: 50%;
+        }
+
+    }
+
+    @media screen and (max-width:790px) {
+        body {
+            background: rgb(27, 57, 51);
+        }
+
+        .Introduction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .heading {
+            width: 400px;
+            font-size: larger;
+            border: 2px solid rgb(69, 62, 35);
+            border-radius: 70%;
+            background-color: rgb(62, 96, 100);
+        }
+
+        .img {
+
+            border-radius: 50%;
+        }
+    }
+</style>
+
 <body>
-    
+    <div class="Introduction">
+        <div class="heading">
+            <h1>Talha Wakeel</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem, nobis recusandae
+                quae cum velit vel unde! Dignissimos sapiente eos libero neque, consequuntur quis quisquam porro
+                laboriosam
+                similique, ab, beatae eligendi eum. Quia veritatis illum, placeat nemo aut numquam labore.</p>
+        </div>
+
+        <img src="profile.png" alt="" width="350px" class="img">
+    </div>
 </body>
+
 </html>
